@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <title>Hello from Flask!</title>
 <h1>Greetings!</h1>
-<p>This is a test html doc</p><br>
+<p>This is a test html doc</p>
 {% if name %}
     <p>Hello {{ name }}!</p>
 {% else %}
     <p>Hello stranger!</p>
 {% endif %}
+<a href="{{ url_for('hello_world') }}">Go to Home</a>
